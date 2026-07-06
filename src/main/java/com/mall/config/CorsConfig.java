@@ -15,11 +15,24 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         String[] origins = StringUtils.commaDelimitedListToStringArray(allowedOrigins);
-        registry.addMapping("/**")
-                .allowedOrigins(origins)
+        var mapping = registry.addMapping("/**")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true)
                 .maxAge(3600);
+        if (hasWildcard(origins)) {
+            mapping.allowedOriginPatterns(origins);
+        } else {
+            mapping.allowedOrigins(origins);
+        }
+    }
+
+    private boolean hasWildcard(String[] origins) {
+        for (String origin : origins) {
+            if (origin.contains("*")) {
+                return true;
+            }
+        }
+        return false;
     }
 }

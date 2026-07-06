@@ -20,7 +20,7 @@ mall:
     path: ./uploads
     url-prefix: /uploads
   cors:
-    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:80,http://localhost}
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:*,http://127.0.0.1:*}
 
 springdoc:
   swagger-ui:
