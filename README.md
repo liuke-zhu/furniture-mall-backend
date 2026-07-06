@@ -2,6 +2,8 @@
 
 > 家具商城后端 — 面向大学生的 Spring Boot 3 电商实战项目，覆盖用户·商品·购物车·订单·支付·后台管理，以及 JWT 鉴权、Redis 缓存、AOP 日志、幂等、Docker 部署等工程化能力。
 
+**配套前端**：[furniture-mall-frontend](https://github.com/liuke-zhu/furniture-mall-frontend)（登录页、商城界面）
+
 [![CI](https://github.com/liuke-zhu/furniture-mall-backend/actions/workflows/ci.yml/badge.svg)](https://github.com/liuke-zhu/furniture-mall-backend/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
@@ -43,28 +45,28 @@ docker compose --profile full up -d
 
 > 前端需克隆配套仓库 `furniture-mall-frontend` 到同级目录。
 
-### 方式二：本地开发
+### 方式二：本地开发（前后端分离，和作者一样）
 
 ```bash
-# 1. 复制环境变量模板
-cp .env.example .env
+# 1. 克隆两个项目
+git clone https://github.com/liuke-zhu/furniture-mall-backend.git
+git clone https://github.com/liuke-zhu/furniture-mall-frontend.git
 
-# 2. 导入数据库
+# 2. 启动后端
+cd furniture-mall-backend
+cp .env.example .env
 mysql -u root -p < sql/furniture_mall.sql
 mysql -u root -p < sql/test_data.sql
+./mvnw spring-boot:run   # Windows: mvnw.cmd spring-boot:run
 
-# 3. 准备演示图片（二选一）
-python scripts/generate_demo_images.py   # 离线生成占位图
-# 或直接使用已提交的 demo-images/ 目录：
-# Windows: xcopy demo-images uploads\ /Y
-# Linux/Mac: cp demo-images/* uploads/
-
-# 4. 启动
-./mvnw spring-boot:run
-# Windows: mvnw.cmd spring-boot:run
+# 3. 启动前端（另开终端）
+cd ../furniture-mall-frontend
+npm install && npm run dev
 ```
 
-前端单独启动见配套仓库 `furniture-mall-frontend`。
+浏览器打开 **http://localhost:5173/login** 即可看到登录界面。
+
+> 后端启动时会自动把 `demo-images/` 复制到 `uploads/`，商品图片开箱即用。
 
 ## 技术栈
 
