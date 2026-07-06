@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: furniture-mall-backend
+  profiles:
+    active: dev
+
+mybatis:
+  type-aliases-package: com.mall.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+mall:
+  jwt:
+    secret: ${JWT_SECRET:furnitureMallDemoJwtSecretForLocalDevOnly2026}
+    expire-seconds: ${JWT_EXPIRE_SECONDS:86400}
+  upload:
+    path: ./uploads
+    url-prefix: /uploads
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:80,http://localhost}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  packages-to-scan: com.mall.controller
+  default-flat-param-object: true

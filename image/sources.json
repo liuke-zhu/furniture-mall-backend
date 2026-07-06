@@ -1,0 +1,112 @@
+{
+  "banner_1.jpg": {
+    "name": "新品上市 全场8折",
+    "pexels_id": 1571468,
+    "description": "gray fabric sofa living room"
+  },
+  "banner_2.jpg": {
+    "name": "北欧简约风 精选家居",
+    "pexels_id": 1866144,
+    "description": "scandinavian living room sofa"
+  },
+  "banner_3.jpg": {
+    "name": "客厅焕新计划",
+    "pexels_id": 276583,
+    "description": "modern sectional sofa living room"
+  },
+  "product_sofa_1.jpg": {
+    "name": "北欧布艺三人沙发",
+    "pexels_id": 15226148,
+    "description": "gray fabric sofa close-up no people"
+  },
+  "product_sofa_2.jpg": {
+    "name": "意式真皮转角沙发",
+    "pexels_id": 276583,
+    "description": "black leather sectional sofa"
+  },
+  "product_sofa_3.jpg": {
+    "name": "日式原木双人沙发",
+    "pexels_id": 1866144,
+    "description": "wooden scandinavian sofa living room"
+  },
+  "product_bed_1.jpg": {
+    "name": "北欧实木双人床1.8m",
+    "pexels_id": 1454806,
+    "description": "modern bedroom wooden bed"
+  },
+  "product_bed_2.jpg": {
+    "name": "轻奢皮艺软包床",
+    "pexels_id": 90319,
+    "description": "upholstered white bed headboard"
+  },
+  "product_table_1.jpg": {
+    "name": "北欧白橡木餐桌",
+    "pexels_id": 17205673,
+    "description": "empty wooden dining table and chairs"
+  },
+  "product_table_2.jpg": {
+    "name": "现代岩板餐桌椅组合",
+    "pexels_id": 34298819,
+    "description": "modern dining table with chairs set"
+  },
+  "product_table_3.jpg": {
+    "name": "日式原木折叠餐桌",
+    "pexels_id": 3935331,
+    "description": "folding wooden dining table"
+  },
+  "product_wardrobe_1.jpg": {
+    "name": "现代简约推拉门衣柜",
+    "pexels_id": 6585617,
+    "description": "walk-in wardrobe closet nobody"
+  },
+  "product_wardrobe_2.jpg": {
+    "name": "北欧实木四门衣柜",
+    "pexels_id": 19962637,
+    "description": "classic wooden wardrobe cabinet"
+  },
+  "product_chair_1.jpg": {
+    "name": "北欧实木餐椅",
+    "pexels_id": 11112733,
+    "description": "wooden dining chair white background"
+  },
+  "product_chair_2.jpg": {
+    "name": "人体工学办公椅",
+    "pexels_id": 1957477,
+    "description": "office chair and desk empty"
+  },
+  "product_coffee_1.jpg": {
+    "name": "北欧圆形茶几",
+    "pexels_id": 279607,
+    "description": "brown round coffee table living room"
+  },
+  "product_coffee_2.jpg": {
+    "name": "大理石面茶几",
+    "pexels_id": 33794454,
+    "description": "round marble coffee table"
+  },
+  "product_coffee_3.jpg": {
+    "name": "北欧原木边几",
+    "pexels_id": 6943418,
+    "description": "bedside side table furniture"
+  },
+  "product_desk_1.jpg": {
+    "name": "北欧实木书桌",
+    "pexels_id": 1957477,
+    "description": "wooden office desk setup"
+  },
+  "product_desk_2.jpg": {
+    "name": "现代烤漆电脑桌",
+    "pexels_id": 667838,
+    "description": "modern computer desk workspace"
+  },
+  "product_nightstand_1.jpg": {
+    "name": "北欧实木床头柜",
+    "pexels_id": 6266189,
+    "description": "wooden bedside table with books"
+  },
+  "product_nightstand_2.jpg": {
+    "name": "简约烤漆床头柜",
+    "pexels_id": 6943418,
+    "description": "white nightstand with lamp"
+  }
+}

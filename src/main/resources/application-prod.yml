@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://mysql:3306/furniture_mall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:123456}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 30000
+      max-lifetime: 1800000
+  data:
+    redis:
+      host: ${REDIS_HOST:redis}
+      port: ${REDIS_PORT:6379}
+      database: 0
+      timeout: 5000ms
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+
+mall:
+  jwt:
+    secret: ${JWT_SECRET:furnitureMallDemoJwtSecretForLocalDevOnly2026}
+    expire-seconds: ${JWT_EXPIRE_SECONDS:86400}
+
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false
+
+logging:
+  level:
+    com.mall: info
+    org.springframework.web: warn
